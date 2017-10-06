@@ -34,17 +34,17 @@ class TickerView extends Component {
   mainDeleteTicker(id) {
   	console.log(id);
   	var array = this.state.Tickers;
-  	let index;
+  	let idx;
   	for(let i = 0; i < array.data; i++)
   	{
   		console.log(array[i].id);
   		if(id === array[i].id)
   		{
-  			index = i;
+  			idx = i;
   			break;
   		}
   	}
-  	array.splice(index, 1);
+  	array.splice(idx, 1);
     this.setState({Tickers: array});
   }
 }
