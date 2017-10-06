@@ -38,7 +38,7 @@ class TickerView extends Component {
   	for(let i = 0; i < array.data; i++)
   	{
   		console.log(array[i].id);
-  		if(array[i].id === id)
+  		if(id === array[i].id)
   		{
   			index = i;
   			break;
